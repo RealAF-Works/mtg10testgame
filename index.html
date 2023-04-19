@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MonstieG10 Killer</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="popup" class="popup">Popup content goes here</div>
+	<div class="container">
+		<h1 class="center">MonstieG10 Killer</div></h1>
+		<div class="healthcontainer">
+			<div class="health-bar">
+				<div class="health"></div>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="left">
+				<div class="enemy">
+					<img id="image" src="" width="450" height="400" />
+				</div>
+			</div>
+			<div class="right">
+				<button class="attack-btn">Attack</button>
+			</div>
+		</div>
+	</div>
+	<div class="shop-container">
+		<div class="shop-menu">
+		<h2 style="color: black">UPGRADES [Your points: <span class="Point-value">0</span>]</h2>
+			<div class="shop-items">
+				<div class="shop-item">
+					<div class="item-container">
+						<img src="gfx/item1.png" width="50" height="50" />
+						<span class="item-name">Increase Damage</span>
+						<span class="item-price">Price: <span class="Damage-Cost">10</span> Points</span>
+						<button class="buy-btn">Buy</button>
+					</div>
+				</div>
+				<div class="shop-item">
+					<div class="item-container">
+						<img src="gfx/item2.png" width="50" height="50" />
+						<span class="item-name">Slow Enemy</span>
+						<span class="item-price">Price: <span class="Slow-Cost">20</span> Points</span>
+					<button class="buy-btn">Buy</button>
+					</div>
+				</div>
+				<div class="shop-item">
+					<div class="item-container">
+						<img src="gfx/item3.png" width="50" height="50" />
+						<span class="item-name">Point Booster</span>
+						<span class="item-price">Price: <span class="PointBoost-Cost">150</span> Points</span>
+						<button class="buy-btn">Buy</button>
+					</div>
+				</div>
+				<div class="shop-item">
+					<div class="item-container">
+						<img src="gfx/item4.png" width="50" height="50" />
+						<span class="item-name">Auto Damage</span>
+						<span class="item-price">Price: <span class="AutoDamage-Cost">400</span> Points</span>
+						<button class="buy-btn">Buy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="stats-container">
+  <div class="info-stats">
+    <div class="info-stat">
+      <div class="stat-container">
+        <span class="stat-name">Attack Damage</span>
+        <span class="stat-damage-value stat-value">50</span>
+      </div>
+    </div>
+    <div class="info-stat">
+      <div class="stat-container">
+        <span class="stat-name">Enemy Slow</span>
+        <span class="stat-slow-value stat-value">0%</span>
+      </div>
+    </div>
+    <div class="info-stat">
+      <div class="stat-container">
+        <span class="stat-name">Point Boost</span>
+        <span class="stat-pointboost-value stat-value" id="point-boost">0%</span>
+      </div>
+    </div>
+    <div class="info-stat">
+      <div class="stat-container">
+        <span class="stat-name">Auto Damage Per Second</span>
+        <span class="stat-autodamage-value stat-value">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>

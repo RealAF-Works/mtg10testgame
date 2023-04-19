@@ -1,0 +1,285 @@
+body {
+	font-family: Arial, sans-serif;
+	background: #151D21;
+	background-image: url('gfx/bg.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.container {
+	margin: 50px auto;
+	max-width: 500px;
+	padding: 20px;
+	text-align: center;
+}
+
+.container2 {
+	display: flex;
+	flex-direction: row;
+	height: 50vh;
+	margin: 50px auto;
+	max-width: 500px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	text-align: center;
+}
+
+
+.healthcontainer {
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	max-width: 500px;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.left {
+	flex: 1;
+	background-color: #eee;
+	text-align: center;
+	height : 250px;
+	position: relative;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.right {
+	flex: 1;
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+h1.center{
+	font-size: 36px;
+	text-align: center;
+}
+
+.game {
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.enemy {
+	position: relative;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.enemy img {
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.health-bar {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+}
+
+
+
+.health {
+	height: 100%;
+	background-color: #4CAF50;
+	border-radius: 5px;
+	transition: width 0.5s ease;
+}
+
+.attack-btn {
+	position: absolute;
+	top: 0;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #ff0000;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.attack-btn:hover {
+background-color: #b30000;
+cursor: pointer;
+}
+
+.score {
+margin-top: 10px;
+font-size: 16px;
+}
+
+.Point-value {
+font-weight: bold;
+}
+
+
+.shop-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 50px;
+	top: 260px;
+}
+
+.shop-menu {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+.shop-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.shop-item {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  color: #777;
+  text-align: center;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop-item img {
+  max-width: 50px;
+  height: auto;
+}
+
+.item-name {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.item-price {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+.buy-btn {
+	display: block;
+	margin-top: 10px;
+	padding: 8px 12px;
+	font-size: 14px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.buy-btn:hover {
+	background-color: #45a049;
+}
+
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 200px;
+  top: 325px;
+}
+
+.info-stats {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.info-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-name {
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 24px;
+  color: #007bff;
+  text-align: center;
+}
+
+.popup {
+	display: none; /* Hide the popup by default */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transition: opacity 0.5s; /* Add a transition for opacity property */
+	color: gold;
+	z-index: 9999;
+}
+
+.popup.show {
+	display: block; /* Show the popup when it has 'show' class */
+	opacity: 1; /* Change opacity to 1 when the popup is shown */
+}
