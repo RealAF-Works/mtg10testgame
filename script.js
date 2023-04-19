@@ -1,7 +1,7 @@
 
 // Global variables
 var health = 100;
-var points = 600;
+var points = 0;
 var damage = 20;
 var slow = 0;
 var pointboost = 0;
